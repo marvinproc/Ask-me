@@ -5,6 +5,8 @@ import { NewRoom } from "./pages/NewRoom";
 
 import { AuthContextProvider } from './context/AuthContext'
 import { Room } from './pages/Room';
+ 
+//teste
 
 function App() {
   return (
