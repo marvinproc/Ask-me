@@ -41,7 +41,6 @@ export function Room() {
     const [questions, setQuestions] = useState<Question[]>([]);
     const [title, setTitle] = useState('');
 
-    // exe
     useEffect(() => {
         const roomRef = database.ref(`rooms/${roomId}`);
 
@@ -60,8 +59,7 @@ export function Room() {
             })
 
             setTitle(databaseRoom.title);
-            setQuestions(parsedQuestions)
-
+            setQuestions(parsedQuestions);
         })
     }, [roomId]);
 
@@ -89,6 +87,7 @@ export function Room() {
 
         setNewQuestion('');
     }
+
     return (
         <div id="page-room">
             <header>
